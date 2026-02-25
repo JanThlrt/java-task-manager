@@ -13,6 +13,7 @@ public class Main {
 
             System.out.println("\n1 - Add task");
             System.out.println("2 - Show tasks");
+            System.out.println("3 - Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -24,6 +25,9 @@ public class Main {
             }
             else if(choice == 2){
                 manager.showTasks();
+            }
+            else if (choice == 3) {
+            	break;
             }
         }
     }
