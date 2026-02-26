@@ -22,4 +22,13 @@ public class TaskManager {
             System.out.println((i+1) + ". " + t.getTitle() + (t.isDone() ? " [Done]" : ""));
         }
     }
+    
+    public void markTaskDone(int index) {
+        if(index >= 0 && index < tasks.size()){
+            tasks.get(index).markDone();
+        } else {
+            System.out.println("Invalid task number.");
+        }
+    }
+    
 }
