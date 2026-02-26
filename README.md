@@ -1,1 +1,29 @@
-# java-task-manager
+# Java Task Manager (Console App)
+
+A simple console-based task manager written in Java. Users can create tasks, view them, and mark tasks as completed. Tasks are saved to a local file so they persist between program runs.
+
+## Features
+- Add tasks
+- View tasks
+- Mark tasks as done
+- Persistent storage (save/load from `tasks.txt`)
+
+## Tech / Concepts
+- Java, OOP
+- Collections (`ArrayList`)
+- File I/O (BufferedReader/BufferedWriter)
+- Basic input validation
+- Git version control
+
+## How to run
+1. Clone the repository
+2. Open the project in Eclipse
+3. Run `Main.java` as a Java Application
+
+## Project structure
+- `Main.java` – console menu / user input
+- `Task.java` – task model (title, done)
+- `TaskManager.java` – task logic (add/show/mark done, save/load)
+
+## Notes
+`tasks.txt` is ignored via `.gitignore` because it contains local runtime data.# java-task-manager
