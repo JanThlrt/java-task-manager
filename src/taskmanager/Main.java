@@ -8,6 +8,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         TaskManager manager = new TaskManager();
+        
+        manager.loadFromFile("tasks.txt");
 
         while(true){
 
@@ -34,6 +36,7 @@ public class Main {
                 manager.markTaskDone(num - 1);
             }
             else if(choice == 4){
+            	manager.saveToFile("tasks.txt");
                 break;
             }
         }

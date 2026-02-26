@@ -21,4 +21,8 @@ public class Task {
     public void markDone() {
         done = true;
     }
+    
+    public void setDone(boolean done) {
+        this.done = done;
+    }
 }
